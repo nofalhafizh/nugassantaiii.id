@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nugassantai.id</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- logo -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />  
+    <!-- css -->
+    <link rel="stylesheet" href="../Asset/styles.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./home.html">nugassantai.id</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./service.html">Service</a>
+            </li>
+          </ul>
+
+          <!-- pisahkan button biar ga ikut gaya nav-link -->
+          <a href="./howtoorder.html" class="btn btn-dark rounded-pill">
+            How To Order?
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="order-card">
+      <h2>Order Sekarang</h2>
+      <form id="orderForm">
+        <div class="mb-3">
+          <label class="form-label">Nama</label>
+          <input type="text" id="nama" class="form-control" placeholder="Masukkan nama kamu" required>
+        </div>
+        <div class="mb-3">
+          <label for="pesanan" class="form-label">Pilih Pesanan</label>
+          <select id="pesanan" class="form-select" required>
+            <option value="" selected disabled>-- Pilih Pesanan --</option>
+            <option value="Essay / Artikel">Essay / Artikel</option>
+            <option value="Presentasi (PPT)">Presentasi (PPT)</option>
+            <option value="Coding / Pemrograman">Coding / Pemrograman</option>
+            <option value="Laporan">Laporan</option>
+            <option value="Tugas Akhir / Skripsi">Tugas Akhir / Skripsi</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="catatan" class="form-label">Catatan Tambahan</label>
+          <textarea id="catatan" class="form-control" rows="3" placeholder="Tuliskan detail tambahan"></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Metode Pembayaran</label>
+          <select id="pembayaran" class="form-select" required>
+            <option value="" disabled selected>-- Pilih Pembayaran --</option>
+            <option value="BRI">BRI</option>
+            <option value="QRIS">QRIS</option>
+            <option value="OVO">Ovo</option>
+            <option value="DANA">Dana</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-custom">Kirim Pesanan</button>
+      </form>
+    </div>
+    
+
+    <!-- Metode Pembayaran -->
+    <section class="py-5 border-top">
+      <div class="container text-center">
+        <h5 class="fw-bold mb-4">Metode Pembayaran</h5>
+        <div class="payment-slider">
+          <div class="payment-track d-flex align-items-center">
+            <img src="../Asset/foto/bri-logo.jpeg" alt="BRI" />
+            <img src="../Asset/foto/qris-logo.jpeg" alt="QRIS" />
+            <img src="../Asset/foto/dana-logo.jpeg" alt="Dana" />
+            <img src="../Asset/foto/ovo-logo.jpeg" alt="OVO" />
+            <!-- duplikat biar looping halus -->
+            <img src="../Asset/foto/bri-logo.jpeg" alt="BRI" />
+            <img src="../Asset/foto/qris-logo.jpeg" alt="QRIS" />
+            <img src="../Asset/foto/dana-logo.jpeg" alt="Dana" />
+            <img src="../Asset/foto/ovo-logo.jpeg" alt="OVO" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-dark text-center text-lg-start border-top">
+      <div class="container p-4">
+        <div class="row text-center text-md-start">
+          <!-- Brand & Description -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <h5 class="fw-bold">nugassantai.id</h5>
+            <p class="small">
+              Bantu wujudkan nilai terbaik tanpa stres. Solusi joki tugas cepat,
+              aman, dan profesional.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <h6 class="fw-bold">Social Media</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://www.instagram.com/nugassantai.id/"
+                  target="_blank"
+                  class="text-dark text-decoration-none d-flex align-items-center mb-2"
+                >
+                  <i class="bi bi-instagram me-2 fs-5"></i> Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@nofalhafizh_"
+                  target="_blank"
+                  class="text-dark text-decoration-none d-flex align-items-center mb-2"
+                >
+                  <i class="bi bi-tiktok me-2 fs-5"></i> TikTok
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/628811269774"
+                  target="_blank"
+                  class="text-dark text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-whatsapp me-2 fs-5"></i> WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-12 col-md-12 col-lg-4 mb-4">
+            <h6 class="fw-bold">Contact Us</h6>
+            <p class="small mb-1">Email: naufalhafizh541@gmail.com</p>
+            <p class="small mb-3">WhatsApp: +62 881-1269-774</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3 border-top">
+        <small>© 2025 nugassantai.id | All Rights Reserved.</small>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/blog.js"></script>
+  </body>
+</html>
